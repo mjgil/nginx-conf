@@ -1,6 +1,13 @@
 server {
     listen 80;
-    listen 443 default_server ssl;
+    server_name mjgil.com www.mjgil.com;
+    location / {
+        proxy_pass http://127.0.0.1:3001;
+    }
+}
+
+server {
+    listen 443 ssl;
     server_name mjgil.com;
     ssl on;
     ssl_certificate /etc/nginx/ssl/mjgil.com/server.crt;
