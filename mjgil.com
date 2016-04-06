@@ -11,17 +11,23 @@ server {
 server {
     listen 443 ssl;
     server_name mackvibes.mjgil.com;
-    proxy_pass http://localhost:3001;
+    location / {
+      proxy_pass http://localhost:3001;
+    }
 }
 
 server {
     listen 443 ssl;
     server_name nudelta2010.mjgil.com;
-    proxy_pass http://localhost:3002;
+    location / {
+      proxy_pass http://localhost:3002;
+    }
 }
 
 server {
     listen 443 ssl;
     server_name nudelta2011.mjgil.com;
-    proxy_pass http://localhost:3003;
+    location / {
+      proxy_pass http://localhost:3003;
+    }
 }
