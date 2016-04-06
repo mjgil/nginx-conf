@@ -1,5 +1,5 @@
 server {
-    listen 80
+    listen 80;
     listen 443 default_server ssl;
     server_name mjgil.com;
     ssl on;
