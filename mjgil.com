@@ -1,5 +1,4 @@
 ssl_session_cache shared:SSL:2m;
-ssl_session_timeout 5m;
 
 server {
     listen 443 default_server ssl;
