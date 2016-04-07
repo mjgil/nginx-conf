@@ -1,5 +1,13 @@
 server {
-    listen 80;
+    listen   80;
+    listen   [::]:80;
+
+    server_name malcomgilbert.com www.malcomgilbert.com;
+
+    return 301 https://$server_name$request_uri;
+}
+
+server {
     listen 443 ssl;
     server_name malcomgilbert.com www.malcomgilbert.com;
 
