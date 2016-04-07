@@ -4,7 +4,7 @@ server {
     server_name malcomgilbert.com www.malcomgilbert.com;
 
     ssl on;
-    ssl_certificate /etc/letsencrypt/live/mjgil.com/fullchain.pem;
+    ssl_certificate /etc/letsencrypt/live/malcomgilbert.com/fullchain.pem;
     ssl_certificate_key /etc/letsencrypt/live/malcomgilbert.com/privkey.pem;
 
     ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
