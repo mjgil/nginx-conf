@@ -13,6 +13,7 @@ git clone https://github.com/letsencrypt/letsencrypt
 # check if nginx is running
 ps auxw | grep nginx 
 letsencrypt-auto certonly
+sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
 ```
 
 ##### Let's Encrypt
