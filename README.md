@@ -12,7 +12,7 @@ sudo nginx -t
 git clone https://github.com/letsencrypt/letsencrypt
 # check if nginx is running
 ps auxw | grep nginx 
-letsencrypt certonly
+letsencrypt-auto certonly
 ```
 
 ##### Let's Encrypt
