@@ -9,7 +9,23 @@ server {
 
 server {
     listen 443 ssl;
-    server_name mjgil.com www.mjgil.com mackvibes.mjgil.com;
+    server_name mackvibes.mjgil.com;
+
+    ssl on;
+    ssl_certificate /etc/letsencrypt/live/mjgil.com/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/mjgil.com/privkey.pem;
+
+    ssl_protocols       TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers         HIGH:!aNULL:!MD5;
+
+    location / {
+        proxy_pass http://127.0.0.1:3001;
+    }
+}
+
+server {
+    listen 443 ssl;
+    server_name mjgil.com www.mjgil.com;
 
     ssl on;
     ssl_certificate /etc/letsencrypt/live/mjgil.com/fullchain.pem;
