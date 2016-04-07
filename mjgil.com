@@ -9,7 +9,7 @@ server {
 
 server {
     listen 443 ssl;
-    server_name mackvibes.mjgil.com;
+    server_name mjgil.com www.mjgil.com;
 
     ssl on;
     ssl_certificate /etc/letsencrypt/live/mjgil.com/fullchain.pem;
@@ -25,7 +25,7 @@ server {
 
 server {
     listen 443 ssl;
-    server_name mjgil.com www.mjgil.com;
+    server_name mackvibes.mjgil.com;
 
     ssl on;
     ssl_certificate /etc/letsencrypt/live/mjgil.com/fullchain.pem;
