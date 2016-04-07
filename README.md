@@ -5,7 +5,8 @@ Commands
 sudo service nginx start
 sudo service nginx restart
 sudo service nginx stop
-sudo /etc/init.d/nginx reload
+sudo service nginx reload
+sudo nginx -t
 
 
 git clone https://github.com/letsencrypt/letsencrypt
