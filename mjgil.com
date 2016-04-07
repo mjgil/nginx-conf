@@ -4,7 +4,7 @@ server {
 
     server_name mackvibes.mjgil.com dancenetwerk.mjgil.com nudelta2010.mjgil.com nudelta2011.mjgil.com checkers.mjgil.com moringaconnect.mjgil.com d3.mjgil.com reliable-socket-demo.mjgil.com pinterest.mjgil.com three.mjgil.com fashionweek.mjgil.com uap.mjgil.com urop.mjgil.com dance.mjgil.com dancefindr.com www.dancefindr.com gfm.mjgil.com goodfoodmafia.com www.goodfoodmafia.com www.mjgil.com mjgil.com;
 
-    return 301 https://$server_name$request_uri;
+    return 301 https://$host$request_uri;
 }
 
 server {
