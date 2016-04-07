@@ -5,9 +5,11 @@ rm -rf /etc/nginx/sites-available/malcomgilbert.com
 rm -rf /etc/nginx/sites-enabled/malcomgilbert.com 
 rm -rf /etc/nginx/sites-available/mjgil.com 
 rm -rf /etc/nginx/sites-enabled/mjgil.com 
+rm -rf /etc/nginx/sites-enabled/ssl
 
 ln -s ~/git/nginxConf/malcomgilbert.com /etc/nginx/sites-available/malcomgilbert.com 
 ln -s ~/git/nginxConf/malcomgilbert.com /etc/nginx/sites-enabled/malcomgilbert.com 
 
 ln -s ~/git/nginxConf/mjgil.com /etc/nginx/sites-available/mjgil.com 
 ln -s ~/git/nginxConf/mjgil.com /etc/nginx/sites-enabled/mjgil.com 
+ln -s ~/git/nginxConf/ssl /etc/nginx/sites-enabled/ssl
